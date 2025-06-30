@@ -1,34 +1,59 @@
-EDA MINI PROJECT
----
+# 🚗 Car Price Prediction – EDA & Machine Learning Project
 
-# Car Dataset EDA Mini Project
+This project performs *Exploratory Data Analysis (EDA)* and *Regression-based Machine Learning modeling* on a car dataset to predict the sellingprice of used cars. The entire project is done using *Python* with a focus on *numpy, pandas, and sklearn*, making it perfect for beginners and intermediate learners.
 
-This is a mini project where I performed *Exploratory Data Analysis (EDA)* on a car dataset using *Python, **Pandas, **NumPy, and **Matplotlib/Seaborn*.
 
-## Project Highlights
+## 📁 Dataset Info
 
-- Loaded and cleaned the dataset
-- Handled missing values
-- Analyzed data types and statistics
-- Visualized data using histograms, bar plots, box plots, and heatmaps
-- Found insights about car brands, fuel types, prices, and mileage
+- *Filename:* dataset eda.csv
+- *Source:* Uploaded by user
+- *Target Column:* sellingprice
+- *Features:* Make, model, year, engine specs, fuel type, condition, and other car attributes
 
-## Tools Used
 
-- Python
-- Pandas
-- NumPy
-- Matplotlib
-- Seaborn
-- Jupyter Notebook
+## 🔍 Project Overview
 
-## How to Run
+### 1. 📊 Exploratory Data Analysis (EDA)
 
-1. Open the .ipynb file in Jupyter Notebook.
-2. Run the cells one by one.
-3. Make sure required libraries are installed:
-   ```bash
-   pip install pandas numpy matplotlib seaborn
+- Shape, datatypes, null values
+- Summary statistics
+- Value counts of categorical features
+- Correlation matrix heatmap
+- Visualizations using matplotlib and seaborn:
+  - Countplots
+  - Pairplots
+  - Boxplots by year and price
+
+### 2. 🤖 Machine Learning Models
+
+We trained 4 regression models using *scikit-learn*:
+
+| Model                    | Description |
+|-------------------------|-------------|
+| Linear Regression        | Simple baseline model |
+| Decision Tree Regressor | Tree-based model capturing non-linearities |
+| Random Forest Regressor | Ensemble method with multiple decision trees |
+| Support Vector Regressor| SVM for regression problems |
+
+#### ✅ Preprocessing Steps:
+- Label Encoding for categorical variables
+- Feature Scaling using StandardScaler
+- Train/Test split (80/20)
+
+#### 📈 Evaluation Metrics:
+- Mean Squared Error (MSE)
+- R² Score
+- Visualizations of Actual vs Predicted
+
+
+## 📦 Libraries Used
+
+```python
+pandas
+numpy
+matplotlib
+seaborn
+scikit-learn
 
 Author:
 
